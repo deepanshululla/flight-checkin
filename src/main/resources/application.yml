@@ -1,0 +1,2 @@
+flightreservation:
+  url: "http://localhost:8080/flightreservation/reservations/"
