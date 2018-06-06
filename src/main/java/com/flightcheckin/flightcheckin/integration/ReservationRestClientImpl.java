@@ -3,6 +3,7 @@ package com.flightcheckin.flightcheckin.integration;
 import com.flightcheckin.flightcheckin.integration.dto.Reservation;
 import com.flightcheckin.flightcheckin.integration.dto.ReservationUpdateRequest;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -25,4 +26,6 @@ public class ReservationRestClientImpl implements ReservationRestClient{
         Reservation reservation=restTemplate.postForObject(RESERVATION_REST_URL,reservationUpdateRequest,Reservation.class);
         return reservation;
     }
+
+
 }
